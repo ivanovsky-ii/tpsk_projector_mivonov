@@ -1,0 +1,30 @@
+﻿<Page x:Class="barbi_shop.pages.record_edit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:barbi_shop.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="95" d:DesignWidth="667"
+      Title="record_edit">
+
+    <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Grid.Column="0" Header="Новая услуга">
+            <Button Name="add_record" Content="Добавить" Click="add_record_Click"></Button>
+        </GroupBox>
+        <GroupBox  Grid.Row="0" Grid.Column="1" Header="Изменение услуг" Name ="edit_record_gb">
+            <Button Name="edit_record" Content="Изменить" Click="edit_record_Click"></Button>
+        </GroupBox>
+    </Grid>
+</Page>

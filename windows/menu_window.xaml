@@ -1,0 +1,54 @@
+﻿<Window x:Class="barbi_shop.windows.menu_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:barbi_shop.windows"
+        mc:Ignorable="d"
+        Title="menu_window" Height="1050" Width="900">
+    <Grid>
+        <!--ДЕЛИМ ВЕРХНЕЕ МЕНЮ И РАБОЧУЮ ЗОНУ-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Аккаунт">
+                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <!--РАБОЧАА ЗОНА, ДЕЛИМ СЕЛЕКТОР ДЕЙСТВИЙ И ДЕЙСТВИЯ-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <ListBox  BorderBrush="Purple" BorderThickness="2" SelectionChanged="ListBox_SelectionChanged">
+                <ListBoxItem Content="Парикмахеры" ></ListBoxItem>
+                <ListBoxItem Content="Услуги"></ListBoxItem>
+                <ListBoxItem Content="Клиенты"></ListBoxItem>
+                <ListBoxItem Content="Записи"></ListBoxItem>
+            </ListBox>
+
+            <Grid Grid.Column="1">
+                <!--ДЕЙСТВИЯ, ДЕЛИМ ВЫВОД ТАБЛИЦЫ И ДОСТУПНЫЕ ДЕЙСТВИЯ-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Frame NavigationUIVisibility="Hidden" Grid.Row="0" Name="DBFrame" BorderBrush="Purple" BorderThickness="2">
+                    <!--ОБЛАСТЬ ВЫВОДА ТАБЛИЦЫ-->
+
+                </Frame>
+
+                <Frame  NavigationUIVisibility="Hidden" Name="db_edit_frame" Grid.Row="1" BorderBrush="Purple" BorderThickness="2">
+                    <!--ОБЛАСТЬ КНОПОК УПРАВЛЕНИЯ-->
+
+                </Frame>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

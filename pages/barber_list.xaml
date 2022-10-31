@@ -1,0 +1,26 @@
+﻿<Page x:Class="barbi_shop.pages.barber_list"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:barbi_shop.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="barber_list">
+
+    <Grid Background="white">
+        <ScrollViewer>
+            <ListView Name="barbers_view_list" SelectionChanged="barbers_view_list_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding barber_id}"/>
+                        <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding barber_name}"/>
+                        <GridViewColumn Header="Пост" DisplayMemberBinding="{Binding barber_post}"/>
+                        <GridViewColumn Header="Инфо" DisplayMemberBinding="{Binding barber_information}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

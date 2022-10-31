@@ -1,0 +1,36 @@
+﻿<Window x:Class="barbi_shop.windows.record_add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:barbi_shop.windows"
+        mc:Ignorable="d"
+        Title="record_add" Height="600" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="Название услуги" Grid.Row="0">
+            <TextBox Name="record_service_tb" Cursor="Arrow"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Барбер" Grid.Row="1">
+            <TextBox Name="barber_record_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Клиент" Grid.Row="2">
+            <TextBox Name="client_record_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Дата и время записи" Grid.Row="3">
+            <TextBox Name="record_date_and_time_tb"/>
+        </GroupBox>
+        <GroupBox Header="Комментарий" Grid.Row="4">
+            <TextBox Name="record_comment_tb"/>
+        </GroupBox>
+
+        <Button Content="Добавить" Grid.Row="5" Name="add_new_record_btn" Click="add_new_record_btn_Click"></Button>
+    </Grid>
+</Window>

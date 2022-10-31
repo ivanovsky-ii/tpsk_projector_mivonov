@@ -1,0 +1,28 @@
+﻿<Window x:Class="barbi_shop.windows.client_add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:barbi_shop.windows"
+        mc:Ignorable="d"
+        Title="client_add" Height="500" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="ФИО" Grid.Row="0">
+            <TextBox Name="client_surname_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Контакт" Grid.Row="1">
+            <TextBox Name="client_phone_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Фото" Grid.Row="2">
+            <TextBox Name="clien11t_photo_tb"></TextBox>
+        </GroupBox>
+
+        <Button Content="Добавить" Grid.Row="3" Name="add_new_client_btn" Click="add_new_client_btn_Click"></Button>
+    </Grid>
+</Window>

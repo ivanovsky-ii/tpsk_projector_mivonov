@@ -1,0 +1,32 @@
+﻿<Window x:Class="barbi_shop.windows.barber_add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:barbi_shop.windows"
+        mc:Ignorable="d"
+        Title="Новый барбер" Height="600" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="ФИО" Grid.Row="0">
+            <TextBox Name="barber_surname_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Пост" Grid.Row="1">
+            <TextBox Name="barber_post_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Инфо" Grid.Row="2">
+            <TextBox Name="barber_information_tb"></TextBox>
+        </GroupBox>
+        <GroupBox Header="Фото" Grid.Row="3">
+            <Button Name="barber_photo_tb" Content="Добавить фото" Click="barber_photo_tb_Click"></Button>
+        </GroupBox>
+        
+        <Button Content="Добавить" Grid.Row="4" Name="add_new_barber_btn" Click="add_new_barber_btn_Click"></Button>
+    </Grid>
+</Window>

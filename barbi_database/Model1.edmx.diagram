@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="909f230216d8478d8db26909c462c69d" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="BarbeShopDBModel.accounts" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="BarbeShopDBModel.barbers" Width="1.5" PointX="0.75" PointY="5.25" />
+        <EntityTypeShape EntityType="BarbeShopDBModel.clients" Width="1.5" PointX="0.75" PointY="8.125" />
+        <EntityTypeShape EntityType="BarbeShopDBModel.records" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="BarbeShopDBModel.services" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="BarbeShopDBModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="4.75" />
+        <AssociationConnector Association="BarbeShopDBModel.FK_records_barbers" />
+        <AssociationConnector Association="BarbeShopDBModel.FK_records_clients" />
+        <AssociationConnector Association="BarbeShopDBModel.FK_records_services" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
